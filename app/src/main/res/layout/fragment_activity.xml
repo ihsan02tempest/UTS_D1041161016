@@ -25,7 +25,7 @@
         android:id="@+id/textView6"
         android:layout_width="333dp"
         android:layout_height="167dp"
-        android:text="Layanan adalah komponen aplikasi yang dapat melakukan operasi jangka panjang di latar belakang, dan tidak menyediakan antarmuka pengguna. Komponen aplikasi lain dapat memulai layanan, dan terus berjalan di latar belakang bahkan jika pengguna beralih ke aplikasi lain. "
+        android:text="Activity adalah komponen penting dari aplikasi Android, dan cara activity diluncurkan dan disatukan adalah bagian mendasar dari model aplikasi platform. "
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,6 +33,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.022"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="184dp"
+        android:layout_height="23dp"
+        android:text="SYNTAX CODE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="336dp"
+        android:layout_height="162dp"
+        android:text="public class Activity extends ApplicationContext {      protected void onCreate(Bundle savedInstanceState);      protected void onStart();      protected void onRestart();      protected void onResume();      protected void onPause();      protected void onStop();       protected void onDestroy();  }"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.05"
         tools:ignore="HardcodedText" />
 
     <Button

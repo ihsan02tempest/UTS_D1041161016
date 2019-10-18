@@ -18,4 +18,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+
+    public void link(View view) {
+    }
 }

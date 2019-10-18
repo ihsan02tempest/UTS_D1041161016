@@ -35,6 +35,34 @@
         app:layout_constraintVertical_bias="0.022"
         tools:ignore="HardcodedText" />
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="184dp"
+        android:layout_height="23dp"
+        android:text="SYNTAX CODE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="336dp"
+        android:layout_height="162dp"
+        android:text="public abstract class Service extends ContextWrapper implements ComponentCallbacks2  java.lang.Object    ↳	android.content.Context  	   ↳	android.content.ContextWrapper  	 	   ↳	android.app.Service"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="HardcodedText" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -42,21 +70,12 @@
         android:background="#9C27B0"
         android:text="@string/link"
         android:textColor="#FFFFFF"
+        android:onClick="link"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.814" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SYNTAX CODE public abstract class Service extends ContextWrapper implements ComponentCallbacks2  java.lang.Object    ↳	android.content.Context  	   ↳	android.content.ContextWrapper  	 	   ↳	android.app.Service"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
