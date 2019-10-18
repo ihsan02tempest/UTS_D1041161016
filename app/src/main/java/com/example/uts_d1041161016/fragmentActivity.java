@@ -16,13 +16,13 @@ public class fragmentActivity extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_activity, container, false);
+        View view = inflater.inflate(R.layout.fragment_content, container, false);
 
         return view;
     }
 
     public void Link(View view) {
-        String url = "https://developer.android.com/reference/android/app/Activity.html" ;
+        String url = "https://developer.android.com/reference/android/app/Service.html" ;
         Intent bukabrowser = new Intent(Intent. ACTION_VIEW);
         bukabrowser.setData(Uri. parse(url));
         startActivity(bukabrowser);
