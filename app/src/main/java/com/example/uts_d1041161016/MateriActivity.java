@@ -1,6 +1,7 @@
 package com.example.uts_d1041161016;
 
 import android.os.Bundle;
+import android.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -18,6 +19,9 @@ public abstract class MateriActivity extends AppCompatActivity {
     }
 
     private void initViews() {
+        // setting toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         // setting view pager
         ViewPager viewPager = findViewById(R.id.viewPager);
@@ -27,6 +31,8 @@ public abstract class MateriActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
     }
+
+    protected abstract void setSupportActionBar(Toolbar toolbar);
 
     private void setupViewPager(ViewPager viewPager) {
         MainFragmentPagerAdapter mainFragmentPagerAdapter = new MainFragmentPagerAdapter(getSupportFragmentManager());
