@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UTS_D1041161016</string>
+    <string name="btn_awal">AYO MULAI</string>
+    <string name="datang_view">SELAMAT DATANG</string>
+    <string name="bgAwal">bgAwal</string>
+    <string name="services">Services</string>
+    <string name="activity">Activity</string>
+    <string name="user_permission">User Permission</string>
+    <string name="content_provider">Content Provider</string>
+    <string name="intent">Intent</string>
+    <string name="link">Link</string>
+</resources>
